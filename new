@@ -18,34 +18,36 @@ import coreUtilities.utils.FileOperations;
 public class pharmacy_Pages extends StartupPage {
 
 //	PLease write all the required locators here
-	By userLocator = By.xpath("//*[@id=\"username_id\"]");
-	  By passLocator = By.xpath("//*[@id=\"password\"]");
-	  By signinLocator = By.xpath("//*[@id=\"login\"]");
-	  By registerLocator = By.xpath("/html/body/my-app/div/div/div[3]/div[2]/div/div/my-app/div/div[1]/div[1]/div/div[2]/div[1]/div[1]/p");
-	  By logoLocator = By.xpath("/html/body/my-app/div/div/div[1]/div/div[1]/a/img");
-	  By pharamacyLocator = By.xpath("/html/body/my-app/div/div/div[3]/div[1]/div/ul/li[29]/a");
-	  By OrderLocator = By.xpath("/html/body/my-app/div/div/div[3]/div[2]/div/div/ng-component/div[1]/ul/li[2]/a");
-	  By SupplierLocator = By.xpath("/html/body/my-app/div/div/div[3]/div[2]/div/div/ng-component/div[1]/ul/li[3]/a");
-	  By ReportLocator = By.xpath("/html/body/my-app/div/div/div[3]/div[2]/div/div/ng-component/div[1]/ul/li[4]/a");
-	  By SettingLocator = By.xpath("/html/body/my-app/div/div/div[3]/div[2]/div/div/ng-component/div[1]/ul/li[5]/a");
-	  By StoreLocator = By.xpath("/html/body/my-app/div/div/div[3]/div[2]/div/div/ng-component/div[1]/ul/li[5]/a");
-	  By SupplierledgerLocator = By.xpath("/html/body/my-app/div/div/div[3]/div[2]/div/div/ng-component/div[1]/ul/li[7]/a");
-	  By SubstoreLocator = By.xpath("/html/body/my-app/div/div/div[3]/div[2]/div/div/ng-component/div[1]/ul/li[8]/a");
-	  By OrderselectedLocator = By.xpath ("/html/body/my-app/div/div/div[3]/div[2]/div/div/ng-component/div[1]/ul/li[2]/a");
-	  By purchaseorderLocator = By.xpath("/html/body/my-app/div/div/div[3]/div[2]/div/div/ng-component/div[2]/ng-component/div/ul/li[1]/a");
-	  By goodsreceiptLocator = By.xpath("/html/body/my-app/div/div/div[3]/div[2]/div/div/ng-component/div[2]/ng-component/div/ul/li[2]/a");
-	  By searchbartLocator = By.xpath("//*[@id=\"quickFilterInput\"]");
-	  By fromdateLocator = By.xpath("//td[contains(text(),'From')]//parent::tr//td[3]//input");
-	  By enddateLocator = By.xpath("//td[contains(text(),'To')]//following::td//input");
-	  By supplierLocator = By.xpath("/html/body/my-app/div/div/div[3]/div[2]/div/div/ng-component/div[2]/ng-component/good-receipt/div[1]/div[2]/div[1]/div[1]/div/div/div/input");
-	  By addnewlocator = By.xpath("/html/body/my-app/div/div/div[3]/div[2]/div/div/ng-component/div[2]/ng-component/good-receipt/div[1]/div[1]/div[1]/button");
-	  By printlocator = By.xpath("//*[@id=\"saveGr\"]");
-	  By pleaselocator = By.xpath("//p[contains(text(),'Please')]");
-	  By closelocator = By.xpath(".//*[@class='fa fa-times']");
-	
-	String pageName = this.getClass().getSimpleName();
+  By userLocator = By.xpath("//*[@id=\"username_id\"]");
+  By passLocator = By.xpath("//*[@id=\"password\"]");
+  By signinLocator = By.xpath("//*[@id=\"login\"]");
+  By registerLocator = By.xpath("/html/body/my-app/div/div/div[3]/div[2]/div/div/my-app/div/div[1]/div[1]/div/div[2]/div[1]/div[1]/p");
+  By logoLocator = By.xpath("/html/body/my-app/div/div/div[1]/div/div[1]/a/img");
+  By pharamacyLocator = By.xpath("/html/body/my-app/div/div/div[3]/div[1]/div/ul/li[29]/a");
+  By OrderLocator = By.xpath("/html/body/my-app/div/div/div[3]/div[2]/div/div/ng-component/div[1]/ul/li[2]/a");
+  By SupplierLocator = By.xpath("/html/body/my-app/div/div/div[3]/div[2]/div/div/ng-component/div[1]/ul/li[3]/a");
+  By ReportLocator = By.xpath("/html/body/my-app/div/div/div[3]/div[2]/div/div/ng-component/div[1]/ul/li[4]/a");
+  By SettingLocator = By.xpath("/html/body/my-app/div/div/div[3]/div[2]/div/div/ng-component/div[1]/ul/li[5]/a");
+  By StoreLocator = By.xpath("/html/body/my-app/div/div/div[3]/div[2]/div/div/ng-component/div[1]/ul/li[5]/a");
+  By SupplierledgerLocator = By.xpath("/html/body/my-app/div/div/div[3]/div[2]/div/div/ng-component/div[1]/ul/li[7]/a");
+  By SubstoreLocator = By.xpath("/html/body/my-app/div/div/div[3]/div[2]/div/div/ng-component/div[1]/ul/li[8]/a");
+  By OrderselectedLocator = By.xpath ("/html/body/my-app/div/div/div[3]/div[2]/div/div/ng-component/div[1]/ul/li[2]/a");
+  By purchaseorderLocator = By.xpath("/html/body/my-app/div/div/div[3]/div[2]/div/div/ng-component/div[2]/ng-component/div/ul/li[1]/a");
+  By goodsreceiptLocator = By.xpath("/html/body/my-app/div/div/div[3]/div[2]/div/div/ng-component/div[2]/ng-component/div/ul/li[2]/a");
+  By searchbartLocator = By.xpath("//*[@id=\"quickFilterInput\"]");
+  By fromdateLocator = By.xpath("//td[contains(text(),'From')]//parent::tr//td[3]//input");
+  By enddateLocator = By.xpath("//td[contains(text(),'To')]//following::td//input");
+  By supplierLocator = By.xpath("/html/body/my-app/div/div/div[3]/div[2]/div/div/ng-component/div[2]/ng-component/good-receipt/div[1]/div[2]/div[1]/div[1]/div/div/div/input");
+  By addnewlocator = By.xpath("/html/body/my-app/div/div/div[3]/div[2]/div/div/ng-component/div[2]/ng-component/good-receipt/div[1]/div[1]/div[1]/button");
+  By printlocator = By.xpath("//*[@id=\"saveGr\"]");
+  By pleaselocator = By.xpath("//p[contains(text(),'Please')]");
+  By closelocator = By.xpath(".//*[@class = 'fa fa-times']");
+  
+  String pageName = this.getClass().getSimpleName();
 	FileOperations fo = new FileOperations();
 	CommonEvents ce = new CommonEvents(driver);
+	
+	
 	public pharmacy_Pages(WebDriver driver) {
 		super(driver);
 	}
@@ -59,9 +61,11 @@ public class pharmacy_Pages extends StartupPage {
 	 * @return : Boolean
 	 * @author : Yaksha
 	 */
+	
 	public boolean loginToHealthAppByGivenValidCredetial(Map<String, String> expectedData) throws Exception {
 		// Write the logic here
-		expectedData = fo.readExcelPOI("C:\\Users\\Administrator\\Desktop\\sakthipriyaramakrishnancognizant.com_1761816712381\\src\\main\\resources\\Login.xlsx","credentials");
+		
+		expectedData = fo.readExcelPOI("C:\\Users\\2252277\\Downloads\\arunkumarannaduraicognizant.com_1761200376977\\src\\main\\resources\\Login.xlsx","credentials");
 		WebElement userelement = ce.findElement(userLocator);
 		WebElement passelement = ce.findElement(passLocator);
 		WebElement siginelement = ce.findElement(signinLocator);
@@ -105,8 +109,8 @@ public class pharmacy_Pages extends StartupPage {
 	 */
 	public String verifyTitleOfThePage() throws Exception {
 		// Write the logic here
-		return ce.getTitle();
 		
+		return ce.getTitle();
 	}
 
 	/**
@@ -121,7 +125,6 @@ public class pharmacy_Pages extends StartupPage {
 	public String verifyURLOfThePage() throws Exception {
 		// Write the logic here
 		return ce.getCurrentUrl();
-		
 	}
 
 	
@@ -135,7 +138,7 @@ public class pharmacy_Pages extends StartupPage {
 	 */
 	public void scrollDownAndClickPharmacyTab() throws Exception {
 		// Write the logic here
-WebElement pharamacyelement = ce.findElement(pharamacyLocator);
+		WebElement pharamacyelement = ce.findElement(pharamacyLocator);
 		
 		ce.scrollToView(pharamacyelement);
 		ce.click(pharamacyelement);
@@ -153,7 +156,7 @@ WebElement pharamacyelement = ce.findElement(pharamacyLocator);
 	public String getPharmacyPageUrl() throws Exception {
 		// Write the logic here
 		ce.waitforUrl("https://healthapp.yaksha.com/Home/Index#/Pharmacy/Dashboard");
-		
+			
 		return ce.getCurrentUrl();
 	}
 	/**
@@ -168,7 +171,6 @@ WebElement pharamacyelement = ce.findElement(pharamacyLocator);
 	 */
 	public boolean verifyAndHighlightPharmacySubModulesTab(String tabName) throws Exception {
 		// Write the logic here
-		
 		WebElement orderelement = ce.findElement(OrderLocator);
 		WebElement supplierelement = ce.findElement(SupplierLocator);
 		WebElement reportelement = ce.findElement(ReportLocator);
@@ -226,10 +228,13 @@ WebElement pharamacyelement = ce.findElement(pharamacyLocator);
 	 */
 	public void visitTabUnderPharmacy(String tabName) throws Exception {
 		// Write the logic here
+		
+		
 		tabName = "order";
 		WebElement orderelement = ce.findElement(OrderLocator);
 		
 		ce.click(orderelement);
+		
 	}
 
 	/**
@@ -242,6 +247,7 @@ WebElement pharamacyelement = ce.findElement(pharamacyLocator);
 	 */
 	public boolean isOrderTabSelected() throws Exception {
 		// Write the logic here
+		
 		WebElement orderselectedelement = ce.findElement(OrderselectedLocator);
 		String s = ce.getAttribute(orderselectedelement,"class");
 		if( s.equals("link3-active")){
@@ -337,6 +343,7 @@ WebElement pharamacyelement = ce.findElement(pharamacyLocator);
 		// Write the logic here
 		WebElement supplierelement = ce.findElement(supplierLocator);
 		return ce.isDisplayed(supplierelement);
+		
 	}
 
 
@@ -379,7 +386,6 @@ WebElement pharamacyelement = ce.findElement(pharamacyLocator);
 	 * @author : YAKSHA
 	 */
 	public void clickButtonByText(String buttonText) throws Exception {
-		
 		// Write the logic here
 		WebElement orderelement = ce.findElement(OrderLocator);
 		ce.click(orderelement);
@@ -391,7 +397,9 @@ WebElement pharamacyelement = ce.findElement(pharamacyLocator);
 		{
 			ce.click(addnewelement);
 		}
+				
 	}
+	
 
 	/**
 	 * @Test6.3 about this method clickPrintReceipt()
@@ -408,9 +416,11 @@ WebElement pharamacyelement = ce.findElement(pharamacyLocator);
 	 * @author : YAKSHA
 	 */
 	public void clickPrintReceipt() throws Exception {
+		
 		// Write the logic here
 		WebElement printelement = ce.findElement(printlocator);
 		ce.scrollToView(printelement);
+		Thread.sleep(4000);
 		ce.click(printelement);
 		Thread.sleep(4000);
 		Alert alert1 = ce.switchAlert();
@@ -444,7 +454,9 @@ WebElement pharamacyelement = ce.findElement(pharamacyLocator);
 	public String verifyMessageByText(String messageText) throws Exception {
 		// Write the logic here
 		
-     WebElement pleaseelement = ce.findElement(pleaselocator);  
+		
+		WebElement pleaseelement = ce.findElement(pleaselocator);
+		
 		return ce.getText(pleaseelement);
 	}
 
@@ -465,10 +477,11 @@ WebElement pharamacyelement = ce.findElement(pharamacyLocator);
 	 */
 	public boolean closeAddGoodReceiptModal() throws Exception {
 		// Write the logic here
-		WebElement closeelement = ce.findElement(closelocator);  
+		WebElement closeelement = ce.findElement(closelocator);
 		ce.click(closeelement);
-		WebElement orderElement = ce.findElement(OrderLocator);
-		return ce.isDisplayed(orderElement);
+		WebElement orderElemnt=ce.findElement(OrderLocator);
+		
+		return ce.isDisplayed(orderElemnt);
 	}
 	
 	/**
@@ -626,3 +639,4 @@ WebElement pharamacyelement = ce.findElement(pharamacyLocator);
 	}
 
 }
+
